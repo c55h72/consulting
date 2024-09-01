@@ -1,18 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-sans-<uniquifier> {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+  
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     text-decoration: none;
     list-style: none;
+    color: #001F3D;
+
 }
 
+h1 {
+    font-size: 36px;
+    line-height: 1.6;
+}
+
+h2 {
+    line-height: 1.6;
+
+}
+
+h3 {
+    line-height: 1.6;
+
+}
+
+p {
+    line-height: 1.6;
+    font-size:  22px;
+}
+
+a {
+    color: #2c4e70;
+}
+
+a:hover {
+    color: #3369a0;
+    transition: .3s ease;
+}
+
+
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
+    padding: 35px 18%;
     background:#001F3D;
     backdrop-filter: blur(10px);
     display: flex;
@@ -26,6 +70,7 @@
     color: white;
     font-weight: 600;
     transition: .3s ease;
+    text-wrap: nowrap;
 }
 
 .logo:hover {
@@ -35,6 +80,8 @@
     transform: scale(1.1);
 }
 
+.navbar {
+}
 
 .navbar a {
     font-size: 18px;
@@ -43,6 +90,8 @@
     margin: 0 20px;
     border-bottom: 3px solid transparent;
     transition: .3s ease;
+    width: auto;
+    text-wrap: nowrap;
 }
 
 .navbar a:hover,
@@ -51,38 +100,43 @@
     border-bottom: 3px solid #e08e45;
 }
 
-.contact {
-    color: #86b3df76;
-}
-
-.social {
-    color: white;
-}
 
 .home{
     width: 100%;
-    min-height: 100vh;
     background-color: white;
     display: flex;
-    align-items: center;
-    gap: 7em;
-    padding: 30px 12% 0;
+    flex-wrap: wrap;
+    padding: 30px 18% 0;
 }
 
 .home-content {
-    max-width: 800px;
+    max-width: 800vh;
+    display: flex;
+    flex-direction: row;
 }
 
-.home-content h3 {
-    font-size: 42px;
-}
-
-.home-content h1 {
-    font-size: 62px;
-    line-height: 1.2;
-}
-
-.home-content p {
+.photo-text {
+    padding: 10px;
     font-size: 18px;
-    margin: 25px 0 30px;
+    /* align-self: center; */
+}
+
+.photo {
+    margin: 10px;
+}
+
+.photo img {
+    width: 25vw;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+.content {
+    padding: 30px 18% 0;
 }
