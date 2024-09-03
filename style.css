@@ -10,17 +10,7 @@
   }
 
 
-@media (min-aspect-ratio: 1/1) {
-    .home-content {
-        flex-direction: row;
-    }
-  }
-  
-  @media (max-aspect-ratio: 1/1) {
-    .home-content {
-        flex-direction: column;
-    }
-  } 
+
 
   
 *{
@@ -167,3 +157,21 @@ footer {
     flex: 1;
 
 }
+
+
+@media (min-aspect-ratio: 1/1) {
+    .home-content {
+        flex-direction: row;
+    }
+  }
+  
+  @media (max-aspect-ratio: 1/1) {
+    .home-content {
+        flex-direction: column;
+        max-width: 100vh;
+    }
+    .home {
+        padding: 5%;
+        margin: 0%;
+    }
+  } 
